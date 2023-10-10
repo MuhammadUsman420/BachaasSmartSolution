@@ -1,0 +1,103 @@
+#slideshow {
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slide {
+    float: left;
+    height: auto;
+    width: 328px;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+}
+.rev-client-sec{
+    width: -webkit-fill-available;
+    text-align: center;
+    height: auto;
+        border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}.slide-wrapper:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+    position: relative;
+}.slide {
+    background: #ffffff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; 
+}.slide:hover{
+    transform: scale(1.01);
+    
+}
+
+
+.slide-wrapper {
+    
+  justify-content: center;
+    width: 100%;
+    animation: slide 10s linear infinite;
+}           .carousel-container {
+  display: -webkit-box;
+  position: relative;
+  width: auto;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-slide {
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    background: white;
+    transition: transform 0.6s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}.cards {
+    padding: 20px;
+    background: white;
+    border-radius: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.owl-prev, .owl-next {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+}
+
+.owl-prev:hover, .owl-next:hover {
+  color: #aaa;
+}
+.owl-carousel .owl-item .item {
+  height: 440px;
+  overflow: hidden;
+}.owl-carousel .owl-stage-outer {
+    overflow: unset !important;
+}
+@media only screen and (max-width: 930px) and (max-device-width: 930px) {
+
+   .owl-carousel .owl-item .item {
+    height:420px;
+}p.content {
+    font-size: 13px;
+}.awesome-features {
+    font-size: 28.17pt;
+    line-height: 40px;
+}
+
+    
+}

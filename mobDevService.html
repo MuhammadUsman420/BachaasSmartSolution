@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/img/bachas-logo.png" />
+    <title>Bacha Smart Solutions</title>
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="" />
+    <link href="assets/css/theme.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/vendor/animate/animate.css" />
+    <link href="./ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+    <script src="./code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <!-- Testimnial -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Slider css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <!-- <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"
+      /> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- For Canvas & Capturing Screenshot Of Invoice -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.6.0/fabric.min.js"></script>-->
+    <!--<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>-->
+
+    <script>
+        toastr.options = {
+            closeButton: true,
+            debug: true,
+            newestOnTop: false,
+            progressBar: true,
+            positionClass: "toast-bottom-left",
+            preventDuplicates: true,
+            onclick: null,
+            showDuration: "500",
+            hideDuration: "1500",
+            timeOut: "5000",
+            extendedTimeOut: "1000",
+            showEasing: "swing",
+            hideEasing: "linear",
+            showMethod: "fadeIn",
+            hideMethod: "fadeOut",
+        };
+    </script>
+    <style>
+        .hide-button {
+            pointer-events: none;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top" id="navbar" style="background-color: black;">
+        <div class="container" id="new-container">
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="index.html">
+                <div class="justify-content-center">
+                    <img alt="" src="assets/images/logo/Blue Modern Company Logo.png" style="border-radius: 17px;" class="mad-logo" id="mad-logo" width="90" />
+                  </div>
+            </a>
+            <div class="navbar-toggler p-0">
+                <button class="navbar-toggler" type="button" onclick="openModal(7)">
+                    <i class="fa-brands fa-paypal"></i>
+                </button>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+                    <li class="nav-item" data-anchor="data-anchor">
+                        <a class="nav-link fw-medium active" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item" data-anchor="data-anchor">
+                        <a class="nav-link fw-medium" href="index.html#featured1">Services</a>
+                    </li>
+                    <!-- <li class="nav-item" data-anchor="data-anchor">
+                        <a class="nav-link fw-medium" href="index.html#testimonial">Testimonial</a>
+                    </li> -->
+                    <li class="nav-item" data-anchor="data-anchor">
+                        <a class="nav-link fw-medium" href="index.html#AboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item" data-anchor="data-anchor">
+                        <a class="nav-link fw-medium" href="index.html#contact1">Contact Us</a>
+                    </li>
+                    <li class="nav-item" data-anchor="data-anchor">
+                        <a class="nav-link fw-medium" href="index-2.html#Policy">Policy</a>
+                    </li>
+                    <li class="nav-item" data-anchor="data-anchor" style="margin-left: 30px;">
+                        <a class="nav-link fw-medium" href="index - German.html">German</a>
+                      </li>
+                </ul>
+                <!-- <form class="ps-lg-5 d-flex justify-content-center align-items-center form-nav">
+                    <button class="btn btn-lg butn-stuff rounded-pill order-0" type="button" onclick="openModal(7)">
+                        Pay Now
+                    </button>
+
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End -->
+
+    <!-- Plus Icons Rotation -->
+    <div class="socialmedia-toggle" onclick="expand()">
+        <i class="fa fa-plus" id="plus"></i>
+    </div>
+
+    <div class="menu_group" id="menu">
+        <a href="https://www.instagram.com/bachassllc/" class="toggle_items" target="_blank"><img alt=""
+                id="toggle-images1" src="assets/img/social-icons/instagramIcon.png" /></a>
+        <a href="https://wa.me/13074564966" class="toggle_items" target="_blank"><img alt="" id="toggle-images2"
+                src="assets/img/social-icons/whatsAppIcon.png" /></a>
+        <a href="https://twitter.com/BachassLLC" class="toggle_items" target="_blank"><img alt="" id="toggle-images3"
+                src="assets/img/social-icons/twitterIcon.png" /></a>
+    </div>
+    <input type="hidden" id="payment_successful_id" value="" />
+    <!-- Plus Icons Rotation End-->
+
+    <!-- Devops Service Details Start-->
+    <section id="services_details">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="content">
+                        <h3 style="color: #ff7003;">App Development Services Includes</h3>
+                        <!-- Image hide show -->
+                        <div
+                            class="col-lg-6 col-md-12 col-sm-12 text-center d-flex align-items-center justify-content-center img---hide">
+                            <img src="assets/img/services/2112.i301.033.F.m004.c9.UI_and_UX_designers_concepts_isometric_background-removebg-preview.png"
+                                class="img-fluid img---float img---hide">
+                        </div>
+                        <p>Mobile app design: I help businesses create visually appealing and user-friendly mobile app
+                            designs that are optimized for different devices and platforms. I use the latest design
+                            tools and techniques to ensure that the app is modern, engaging, and easy to navigate.
+                            <br>
+                            <br>
+                            Native mobile app development: We specialize in native mobile app development using popular programming languages such as Swift for iOS and Java/Kotlin for Android. I create robust and scalable mobile apps that can handle high traffic and complex functionality.
+                            <br>
+                            <br>
+                            Hybrid mobile app development: I offer hybrid mobile app development services using frameworks such as React Native and Flutter. This allows businesses to create mobile apps that can be deployed on both iOS and Android platforms with a single codebase, making it cost-effective and faster to develop.
+                            <br>
+                            <br>
+                           App integration: We assist businesses in integrating their mobile apps with different APIs, third-party services, and back-end systems. This enables businesses to create seamless user experiences and provide better functionality to their customers.
+                            <br>
+                            <br>
+                            App maintenance and support: We offer ongoing app maintenance and support services to ensure that mobile apps are up-to-date, secure, and functioning correctly. This includes bug fixes, performance optimization, and regular updates to keep the app running smoothly.
+                            <br>
+                            <br>
+                            Through our mobile development services, we would help businesses to create mobile apps that are visually appealing, user-friendly, and efficient. Contact me today to learn more about how my mobile development services can benefit your business.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="col-lg-6 col-md-12 col-sm-12 text-center d-flex align-items-center justify-content-center img---show">
+                    <img src="assets/img/services/2112.i301.033.F.m004.c9.UI_and_UX_designers_concepts_isometric_background-removebg-preview.png"
+                        class="img-fluid img---float">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Devops Service Details End-->
+
+
+    <!-- Footer Section Start-->
+    <section class="pb-lg-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0">
+                    <img class="mb-4" src="assets/img/bachas-logo.png" width="150" alt="Mad" />
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-lg-1 order-md-2 text-center">
+                    <h4 class="footer-heading-color fw-bold mb-3 mb-lg-4">Company</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                            <a class="link-900 fs-1 fw-medium text-decoration-none" href="index.html#AboutUs">About</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-900 fs-1 fw-medium text-decoration-none"
+                                href="index.html#contact1">Contact</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="link-900 fs-1 fw-medium text-decoration-none"
+                                href="index.html#featured1">Services</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-lg-2 order-md-3 text-center">
+                    <h4 class="footer-heading-color fw-bold mb-3 mb-lg-4">
+                        Policies
+                    </h4>
+                    <ul class="list-unstyled mb-0">
+                        <!--Continue-->
+                        <li class="mb-2">
+                            <a href="ourgoals.html#ourgoals"
+                                class="link-900 fs-1 fw-medium text-decoration-none policy-links">Our
+                                Goal</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="paymentpolicy.html#collapse1"
+                                class="link-900 fs-1 fw-medium text-decoration-none policy-links">Reference</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="disclaimerpolicy.html#collapse3"
+                                class="link-900 fs-1 fw-medium text-decoration-none policy-links">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
+              <h4 class="footer-heading-color fw-bold mb-3 mb-lg-4">More</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">
+                  <a class="link-900 fs-1 fw-medium text-decoration-none" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="mb-2">
+                  <a class="link-900 fs-1 fw-medium text-decoration-none"
+                    href="testimoniald41d.html?#reviewTestimonials">Testimonials</a>
+                </li>
+                <li class="mb-2">
+                  <a class="link-900 fs-1 fw-medium text-decoration-none" href="reviews.html#reviews">Client Reviews</a>
+                </li>
+              </ul>
+            </div> -->
+                <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1 text-center">
+                    <div class="icon-group mb-4 d-flex justify-content-center">
+                        <a class="text-decoration-none icon-item shadow-social" target="_blank" id="whatsapp"
+                            href="https://wa.me/13074564966"><i class="fab fa-whatsapp"> </i></a>
+                        <a class="text-decoration-none icon-item shadow-social" target="_blank" id="instagram"
+                            href="https://www.instagram.com/bachassllc/"><i class="fab fa-instagram"> </i></a><a
+                            class="text-decoration-none icon-item shadow-social" target="_blank" id="twitter"
+                            href="https://twitter.com/BachassLLC"><i class="fab fa-twitter"> </i></a>
+                    </div>
+                    <h4 class="fw-medium text-secondary mb-3">
+                        Discover our designs
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-3 text-center background d-flex justify-content-lg-evenly">
+        <p class="mb-0 text-white fs--1 fw-medium align-self-md-center">
+            BACHA SMART SOLUTIONS LLC
+        </p>
+        <div class="d-flex">
+            <div>
+                <div class="link-900-white">Germany :</div>
+                <div class="link-900-white">USA :</div>
+            </div>
+            <div>
+                <div class="link-900-white">+49-1745654880</div>
+                <div class="link-900-white">+1-(307) 456 4966</div>
+            </div>
+        </div>
+        <p class="mb-0 text-white fs--1 fw-medium align-self-md-center">
+            1603 Capital Avenue, Suite 4134070<br />
+            Cheyenne, Wyoming 82001
+        </p>
+    </div>
+    <!-- Footer Section End -->
+
+    <script src="ajax/libs/packery/2.1.2/packery.pkgd.min.js"></script>
+    <script src="ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="npm/bootstrap%405.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/wow/wow.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-263607911-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-263607911-1');
+
+
+
+        var plusIcon = document.querySelector("#plus");
+        var socialIcons = document.querySelector("#menu");
+        var toggle = 0;
+        function expand() {
+            if (toggle == 0) {
+                plusIcon.style.transform = "rotate(360deg)";
+                socialIcons.style.transform = "scale(2)";
+                toggle = 1;
+            } else {
+                plusIcon.style.transform = "rotate(0deg)";
+                socialIcons.style.transform = "scale(0)";
+                toggle = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>
